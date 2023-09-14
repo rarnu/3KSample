@@ -1,0 +1,16 @@
+ktor:
+  application:
+    modules:
+      - com.isyscore.wh.MainKt.module
+  deployment:
+    port: 8080
+
+database:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: "jdbc:mysql://127.0.0.1:3306/wuyu_cost?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8"
+  username: root
+  password: rootroot
+  initialSize: 10
+  maxActive: 25
+  maxWait: 3000
+  logLevel: info
